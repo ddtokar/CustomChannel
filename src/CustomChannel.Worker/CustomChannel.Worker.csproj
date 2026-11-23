@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomChannel.Application\CustomChannel.Application.csproj" />
+    <ProjectReference Include="..\CustomChannel.Infrastructure\CustomChannel.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

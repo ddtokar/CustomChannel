@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CustomChannel.Application/CustomChannel.Application.csproj" />
+    <Project Path="src/CustomChannel.Domain/CustomChannel.Domain.csproj" />
+    <Project Path="src/CustomChannel.Infrastructure/CustomChannel.Infrastructure.csproj" />
+    <Project Path="src/CustomChannel.Worker/CustomChannel.Worker.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CustomChannel.IntegrationTests/CustomChannel.IntegrationTests.csproj" />
+    <Project Path="tests/CustomChannel.UnitTests/CustomChannel.UnitTests.csproj" />
+  </Folder>
+</Solution>
