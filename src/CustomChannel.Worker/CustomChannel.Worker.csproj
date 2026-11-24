@@ -1,8 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CustomChannel.Application\CustomChannel.Application.csproj" />
     <ProjectReference Include="..\CustomChannel.Infrastructure\CustomChannel.Infrastructure.csproj" />
+    <ProjectReference Include="..\CustomChannel.Infrastructure.PubSub\CustomChannel.Infrastructure.PubSub.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.15" />
   </ItemGroup>
 
 </Project>

@@ -47,10 +47,11 @@ Worker ──► Infrastructure ──► Application ──► Domain
 
 Позже задавайте их так:
 
-- **Локальные значения:** `appsettings.Local.json` рядом с `appsettings.json` или
-  [.NET User Secrets](https://learn.microsoft.com/aspnet/core/security/app-secrets)
-  (`dotnet user-secrets`). Эти файлы исключены через `.gitignore`.
-- **Переменные окружения:** например `GoogleCloud__ProjectId`, `ConnectionStrings__PostgreSql`.
+- **Локальные значения:** `appsettings.Development.json` рядом с `appsettings.json`
+  (Generic Host загружает его, только если задано `DOTNET_ENVIRONMENT=Development`).
+  Файл исключён через `.gitignore`.
+- **Переменные окружения:** например `PubSub__ProjectId`, `PubSub__SubscriptionId`,
+  `ConnectionStrings__PostgreSql`. Они перекрывают значения из JSON-файлов.
   Файлы `.env` игнорируются Git; при необходимости можно добавить `.env.example` без секретов.
 - **GCP credentials:** локально используйте Application Default Credentials
   (`gcloud auth application-default login`) либо переменную окружения
